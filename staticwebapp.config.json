@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "route": "/v1/*",
+      "allowedRoles": [],
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE",
+        "HEAD",
+        "OPTIONS",
+        "PATCH"
+      ],
+      "authLevel": "anonymous",
+      "proxy": {
+        "backendUri": "https://api.openai.com/v1/{*path}",
+        "requestOverrides": {
+          "backend.request.headers.Authorization": "{http.request.header.Authorization}"
+        },
+        "backendRequestHeaders": {
+          "Authorization": "Bearer sk-your-token",
+          "Host": "api.openai.com"
+        }
+      }
+    }
+  ]
+}
