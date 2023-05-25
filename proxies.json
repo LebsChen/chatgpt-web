@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "api": {
+            "matchCondition": {
+                "route": "/v1/{*path}"
+            },
+            "backendUri": "https://api.openai.com/v1/{path}",
+            "requestOverrides": {
+                "backend.request.headers.Authorization": "{http.request.header.Authorization}"
+            },
+            "backend.request.headers": {
+                "Authorization": "Bearer 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",
+                "Host": "api.openai.com"
+            }
+        }
+    }
+}
