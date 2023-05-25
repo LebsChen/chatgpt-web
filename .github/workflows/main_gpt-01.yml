@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'GPT-01'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_740C256663A04FFEA1F54C733920C5EF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7B3DFE35232247939433E5FADE7A42A8 }}
           package: .
