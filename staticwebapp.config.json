@@ -19,7 +19,7 @@
           "backend.request.headers.Authorization": "{http.request.header.Authorization}"
         },
         "backendRequestHeaders": {
-          "Authorization": "Bearer sk-your-token",
+          "Authorization": "Bearer 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",
           "Host": "api.openai.com"
         }
       }
